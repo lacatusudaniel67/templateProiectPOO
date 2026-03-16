@@ -106,7 +106,6 @@ elseif(UNIX)
             message("No matching Clang version to add sanitizer flags! Found: ${CMAKE_CXX_COMPILER_VERSION}")
         endif()
     endif()
-    endif()
 endif()
 
 ###############################################################################
