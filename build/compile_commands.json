@@ -1,0 +1,80 @@
+[
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\main.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\main.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/main.cpp",
+  "output": "CMakeFiles/oop.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\Bilet.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\Bilet.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/Bilet.cpp",
+  "output": "CMakeFiles/oop.dir/Bilet.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\BiletStandard.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\BiletStandard.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/BiletStandard.cpp",
+  "output": "CMakeFiles/oop.dir/BiletStandard.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\BiletRedus.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\BiletRedus.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/BiletRedus.cpp",
+  "output": "CMakeFiles/oop.dir/BiletRedus.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\BiletVIP.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\BiletVIP.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/BiletVIP.cpp",
+  "output": "CMakeFiles/oop.dir/BiletVIP.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\BiletAbonament.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\BiletAbonament.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/BiletAbonament.cpp",
+  "output": "CMakeFiles/oop.dir/BiletAbonament.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\AbonamentVIP.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\AbonamentVIP.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/AbonamentVIP.cpp",
+  "output": "CMakeFiles/oop.dir/AbonamentVIP.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\Eveniment.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\Eveniment.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/Eveniment.cpp",
+  "output": "CMakeFiles/oop.dir/Eveniment.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\Locatie.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\Locatie.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/Locatie.cpp",
+  "output": "CMakeFiles/oop.dir/Locatie.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\Client.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\Client.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/Client.cpp",
+  "output": "CMakeFiles/oop.dir/Client.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\AgentieTicketing.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\AgentieTicketing.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/AgentieTicketing.cpp",
+  "output": "CMakeFiles/oop.dir/AgentieTicketing.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\ExceptieTicketing.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\ExceptieTicketing.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/ExceptieTicketing.cpp",
+  "output": "CMakeFiles/oop.dir/ExceptieTicketing.cpp.obj"
+},
+{
+  "directory": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -std=c++20 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\oop.dir\\Meniu.cpp.obj -c \"C:\\Users\\lacat\\Desktop\\SEMESTRUL 2\\POO\\templateProiectPOO\\Meniu.cpp\"",
+  "file": "C:/Users/lacat/Desktop/SEMESTRUL 2/POO/templateProiectPOO/Meniu.cpp",
+  "output": "CMakeFiles/oop.dir/Meniu.cpp.obj"
+}
+]
