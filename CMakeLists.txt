@@ -16,8 +16,21 @@ else()
 endif()
 
 # Main executable
-add_executable(${PROJECT_NAME} main.cpp)
-
+add_executable(${PROJECT_NAME} 
+    main.cpp
+    Bilet.cpp
+    BiletStandard.cpp
+    BiletRedus.cpp
+    BiletVIP.cpp
+    BiletAbonament.cpp
+    AbonamentVIP.cpp
+    Eveniment.cpp
+    Locatie.cpp
+    Client.cpp
+    AgentieTicketing.cpp
+    ExceptieTicketing.cpp
+    Meniu.cpp
+)
 if(GITHUB_ACTIONS)
     message("NOTE: GITHUB_ACTIONS defined")
     target_compile_definitions(${PROJECT_NAME} PRIVATE GITHUB_ACTIONS)
