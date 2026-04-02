@@ -92,7 +92,9 @@ void Meniu::ruleaza() {
 
     while (optiune != 0) {
         afiseazaOptiuni();
-        std::cin >> optiune;
+        if (!(std::cin >> optiune)) {
+            break;
+        }
 
         if (optiune == 1) {
             adaugaEvenimentNou();
