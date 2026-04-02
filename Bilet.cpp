@@ -26,7 +26,8 @@ Bilet::Bilet(const Bilet& other) {
 }
 
 Bilet& Bilet::operator=(const Bilet& other) {
-    if (this != &other) { 
+    if (this != &other) {
+        this->idBilet = other.idBilet; 
         this->pretDeBaza = other.pretDeBaza;
     }
     return *this;

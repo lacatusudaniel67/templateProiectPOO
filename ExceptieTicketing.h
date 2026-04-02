@@ -7,7 +7,7 @@ private:
     std::string mesajEroare;
 
 public:
-    ExceptieTicketing(const std::string& mesaj);
+    explicit ExceptieTicketing(const std::string& mesaj);
     
     // se suprascrie metoda what() pentru a afisa eroarea
     const char* what() const noexcept override;
