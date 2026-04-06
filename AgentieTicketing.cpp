@@ -15,7 +15,11 @@ void AgentieTicketing::afiseazaToateEvenimentele() const {
         evenimente[i].afiseazaBilete();
     }
 }
-
+void AgentieTicketing::stergeUltimulEvenimentDinMemorie() {
+    if (evenimente.size() > 0) {
+        evenimente.pop_back(); 
+    }
+}
 Eveniment& AgentieTicketing::getEveniment(size_t index) {
     if (index >= evenimente.size()) {
         throw std::out_of_range("index invalid!");

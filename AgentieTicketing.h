@@ -11,7 +11,7 @@ public:
     
     void adaugaEveniment(const Eveniment& ev);
     void afiseazaToateEvenimentele() const;
-    
+    void stergeUltimulEvenimentDinMemorie();
     Eveniment& getEveniment(size_t index);
     size_t getNumarEvenimente() const;
 };

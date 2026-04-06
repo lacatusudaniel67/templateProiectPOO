@@ -69,7 +69,7 @@ void Meniu::afiseazaBazaDeDate() const {
 
 void Meniu::actualizeazaEveniment() {
     if (agentie.getNumarEvenimente() > 0) {
-        std::cout << "Actualizam primul eveniment cu date noi (demo)...\n";
+        std::cout << "Actualizam primul eveniment cu date noi\n";
         Eveniment evActualizat("Festival_Modificat", "Azi");
         agentie.getEveniment(0) = evActualizat;
         std::cout << "Actualizare completa.\n";
@@ -79,9 +79,10 @@ void Meniu::actualizeazaEveniment() {
 }
 
 void Meniu::stergeUltimulEveniment() {
-    std::cout << "Stergem ultimul eveniment adaugat (demo)...\n";
+    std::cout << "Stergem ultimul eveniment adaugat...\n";
     if (agentie.getNumarEvenimente() > 0) {
-        std::cout << "Operatiune logica de stergere inregistrata!\n";
+        agentie.stergeUltimulEvenimentDinMemorie();
+        std::cout << "Eveniment sters cu succes!\n";
     } else {
         std::cout << "Nu exista evenimente de sters.\n";
     }
