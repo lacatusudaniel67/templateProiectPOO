@@ -7,12 +7,12 @@
 Meniu::Meniu() {}
 
 void Meniu::afiseazaOptiuni() const {
-    std::cout << "\n=== MENIU AGENTIE TICKETING ===\n";
+    std::cout << "\ MENIU AGENTIE TICKETING\n";
     std::cout << "1. Creare: Adauga eveniment nou\n";
     std::cout << "2. Creare: Vinde bilet pentru un eveniment\n";
     std::cout << "3. Afisare: Arata toate evenimentele si biletele\n";
-    std::cout << "4. Actualizare: Adauga un text la numele evenimentului\n";
-    std::cout << "5. Stergere: Anuleaza (sterge) ultimul eveniment\n";
+    std::cout << "4. Actualizare: Adauga la numele evenimentului\n";
+    std::cout << "5. Stergere: Sterge ultimul eveniment\n";
     std::cout << "0. Iesire\n";
     std::cout << "Alege o optiune: ";
 }

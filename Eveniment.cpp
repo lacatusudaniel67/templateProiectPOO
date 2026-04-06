@@ -48,7 +48,7 @@ void Eveniment::afiseazaBilete() const {
         bileteVandute[i]->afiseazaDetalii(); 
     }
 }
-//polimorfismul  
+//polimorfismul dinamic: suprascriu(override) metodele virtuale din clasa de baza
 double Eveniment::calculeazaIncasariTotal() const {
     double total = 0.0;
     for (size_t i = 0; i < bileteVandute.size(); i = i + 1) {
