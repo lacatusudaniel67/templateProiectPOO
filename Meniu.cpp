@@ -1,13 +1,15 @@
 #include "Meniu.h"
 #include "ExceptieTicketing.h"
 #include "BiletStandard.h"
+#include "BiletFactory.h"
+#include "StrategiePret.h"
 #include <iostream>
 #include <string>
 
 Meniu::Meniu() {}
 
 void Meniu::afiseazaOptiuni() const {
-    std::cout << "\n=== MENIU AGENTIE TICKETING ===\n";
+    std::cout << "\nMENIU AGENTIE TICKETING\n";
     std::cout << "1. Creare: Adauga eveniment nou\n";
     std::cout << "2. Creare: Vinde bilet pentru un eveniment\n";
     std::cout << "3. Afisare: Arata toate evenimentele si biletele\n";
@@ -31,7 +33,7 @@ void Meniu::adaugaEvenimentNou() {
 
 void Meniu::vindeBilet() {
     if (agentie.getNumarEvenimente() == 0) {
-        std::cout << "Nu exista evenimente! Adauga unul mai intai.\n";
+        std::cout << "Nu exista evenimente! Adauga evenimente.\n";
         return;
     }
 
@@ -40,16 +42,41 @@ void Meniu::vindeBilet() {
     std::cin >> indexEveniment;
 
     try {
-        Eveniment& ev = agentie.getEveniment(indexEveniment);
-
         double pret;
         std::cout << "Introdu pretul biletului: ";
         std::cin >> pret;
         if (pret <= 0) {
             throw ExceptieTicketing("Eroare: Pretul nu poate fi zero sau negativ!");
         }
-        Bilet* biletNou = new BiletStandard(pret, 1, 1);
-        ev.adaugaBilet(biletNou);
+        std::string tipBilet;
+        std::cout << "Introdu tipul biletului (STANDARD, VIP, REDUS, ABONAMENT_VIP): ";
+        std::cin >> tipBilet;
+
+        // creez biletul brut
+        Bilet* biletNou = BiletFactory::creeazaBiletDinDB(tipBilet, pret);
+        std::cout << "\nDoriti sa aplicati o strategie de pret?\n";
+        std::cout << "1. Nicio strategie (Pret Standard)\n";
+        std::cout << "2. Reducere Student (-50%)\n";
+        std::cout << "3. Taxa Eco-Finantare (+5 RON)\n";
+        std::cout << "4. Reducere Early Bird (-20%)\n";
+        std::cout << "Alegere: ";
+        int optiuneStrategie;
+        std::cin >> optiuneStrategie;
+
+        if (optiuneStrategie == 2) {
+            biletNou->setStrategie(new StrategieStudent());
+        } else if (optiuneStrategie == 3) {
+            biletNou->setStrategie(new StrategieEco());
+        } else if (optiuneStrategie == 4) {
+            biletNou->setStrategie(new StrategieEarlyBird());
+        }
+
+        // afisez pretul calculat de strategie
+        std::cout << "-> Pretul final dupa strategie va fi: " 
+                  << biletNou->calculeazaPretFinal() << " RON\n";
+
+        //salvez biletul in agentie si in baza de date
+        agentie.vindeBiletLaEveniment(indexEveniment, biletNou, tipBilet, pret);
         std::cout << "Bilet vandut cu succes!\n";
 
     } catch (const ExceptieTicketing& e) {
@@ -58,7 +85,6 @@ void Meniu::vindeBilet() {
         std::cout << "Eroare standard: " << e.what() << "\n";
     }
 }
-
 void Meniu::afiseazaBazaDeDate() const {
     if (agentie.getNumarEvenimente() == 0) {
         std::cout << "Baza de date este goala.\n";

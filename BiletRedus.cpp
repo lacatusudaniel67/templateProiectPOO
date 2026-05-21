@@ -15,7 +15,8 @@ BiletRedus::~BiletRedus() {}
 
 double BiletRedus::calculeazaPretFinal() const {
     double sumaRedusa = (pretDeBaza * procentReducere) / 100.0;
-    return pretDeBaza - sumaRedusa;
+    double pretCalculat=pretDeBaza - sumaRedusa;
+    return aplicaStrategie(pretCalculat);
 }
 
 void BiletRedus::afiseazaDetalii() const {

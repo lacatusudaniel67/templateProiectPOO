@@ -18,6 +18,7 @@ endif()
 # Main executable
 add_executable(${PROJECT_NAME} 
     main.cpp
+    DatabaseManager.cpp
     Bilet.cpp
     BiletStandard.cpp
     BiletRedus.cpp
@@ -30,6 +31,8 @@ add_executable(${PROJECT_NAME}
     AgentieTicketing.cpp
     ExceptieTicketing.cpp
     Meniu.cpp
+    BiletFactory.cpp
+    sqlite3.c
 )
 if(GITHUB_ACTIONS)
     message("NOTE: GITHUB_ACTIONS defined")
@@ -76,3 +79,8 @@ elseif(UNIX)
 endif()
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
+set_source_files_properties(sqlite3.c PROPERTIES COMPILE_FLAGS "-w")
+if(UNIX)
+    find_package(Threads REQUIRED)
+    target_link_libraries(oop PRIVATE Threads::Threads ${CMAKE_DL_LIBS})
+endif()

@@ -20,7 +20,7 @@ double BiletVIP::calculeazaPretFinal() const {
         pretFinal = pretFinal + 150.0;
     }
     
-    return pretFinal;
+    return aplicaStrategie(pretFinal);
 }
 
 void BiletVIP::afiseazaDetalii() const {

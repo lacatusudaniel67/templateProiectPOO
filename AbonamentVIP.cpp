@@ -25,7 +25,7 @@ double AbonamentVIP::calculeazaPretFinal() const {
     }
     
     pretFinal = pretFinal + 100.0; // taxa extra
-    return pretFinal;
+    return aplicaStrategie(pretFinal);
 }
 
 void AbonamentVIP::afiseazaDetalii() const {

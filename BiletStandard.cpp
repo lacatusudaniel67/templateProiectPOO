@@ -14,7 +14,7 @@ BiletStandard::BiletStandard(double pret, int r, int l) : Bilet(pret) {
 BiletStandard::~BiletStandard() {}
 
 double BiletStandard::calculeazaPretFinal() const {
-    return pretDeBaza;
+    return aplicaStrategie(pretDeBaza);
 }
 
 void BiletStandard::afiseazaDetalii() const {

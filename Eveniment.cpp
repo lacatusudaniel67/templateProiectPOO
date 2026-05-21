@@ -35,7 +35,13 @@ Eveniment& Eveniment::operator=(const Eveniment& other) {
     }
     return *this;
 }
+std::string Eveniment::getNume() const {
+    return numeEveniment;
+}
 
+std::string Eveniment::getData() const {
+    return data; 
+}
 void Eveniment::adaugaBilet(Bilet* bilet) {
     if (bilet != nullptr) {
         bileteVandute.push_back(bilet);

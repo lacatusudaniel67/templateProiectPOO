@@ -15,7 +15,9 @@ Bilet::Bilet(double pret) {
 }
 
 Bilet::~Bilet() {
-    //destructor gol necesar pentru polimorfism
+    if(strategie != nullptr) {
+        delete strategie;
+    }
 }
 
 Bilet::Bilet(const Bilet& other) {
@@ -23,18 +25,25 @@ Bilet::Bilet(const Bilet& other) {
     contorId = contorId + 1;
     this->idBilet = contorId;
     this->pretDeBaza = other.pretDeBaza;
+    this->strategie = nullptr;
 }
 
 Bilet& Bilet::operator=(const Bilet& other) {
     if (this != &other) {
         this->idBilet = other.idBilet; 
         this->pretDeBaza = other.pretDeBaza;
+
+        if(this->strategie!=nullptr)
+        {
+            delete this->strategie;
+            this->strategie = nullptr;
+        }
     }
     return *this;
 }
 
 void Bilet::afiseazaDetalii() const {
-    std::cout << "Bilet ID: " << idBilet << " | Pret: " << pretDeBaza << " RON\n";
+    std::cout << "Bilet ID: " << idBilet << " | Pret: " << pretDeBaza << " RON"<< " | Pret FINAL: " << calculeazaPretFinal() << " RON\n";
 }
 
 int Bilet::getContoareBilete() {

@@ -14,7 +14,8 @@ BiletAbonament::~BiletAbonament() {}
 double BiletAbonament::calculeazaPretFinal() const {
     double pretTotal = pretDeBaza * numarZileValabilitate;
     double reducere = pretTotal * 0.10;
-    return pretTotal - reducere;
+    double pretCalculat= pretTotal - reducere;
+    return aplicaStrategie(pretCalculat);
 }
 
 void BiletAbonament::afiseazaDetalii() const {

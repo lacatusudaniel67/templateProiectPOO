@@ -14,6 +14,8 @@ public:
     Eveniment(const std::string& nume, const std::string& data);
     ~Eveniment();
     Eveniment(const Eveniment& other);
+    std::string getNume() const;
+    std::string getData() const;
     Eveniment& operator=(const Eveniment& other);
 
     void adaugaBilet(Bilet* bilet);
